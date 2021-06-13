@@ -1,0 +1,247 @@
+html, body {
+    font-family: Tahoma;
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+}
+
+body {
+    background: url(img/top_bg.jpg);
+    background-repeat: repeat-x;
+}
+
+/*
+ * 
+ */
+
+.header {
+    width: 100%;
+    height: 250px;
+    padding-top: 50px;
+    box-sizing: border-box;
+    position: relative;
+    background: url(img/header.jpg);
+    background-size: cover;
+}
+
+.menu {
+    width: 100%;
+    height: 27px;
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    background: url(img/nav.gif);
+}
+.menu-item {
+    float: left;
+    height: 27px;
+    font-size: 12px;
+    position: relative;
+}
+.menu-item:hover {
+    background: url(img/nav_hover.gif);
+}
+.menu-item a {
+    display: inline-block;
+    padding: 0 10px;
+    height: 27px;
+    line-height: 27px;
+    color: #fff;
+    text-decoration: none;
+}
+.menu-item:hover:after {
+    content: '';
+    width: 0;
+    height: 0;
+    position: absolute;
+    bottom: -9px;
+    left: 50%;
+    margin-left: -5px;
+    border: 5px solid transparent;
+    border-top: 5px solid #677925;
+}
+
+.menu-search {
+    width: 200px;
+    height: 27px;
+    position: absolute;
+    top: 0;
+    right: 10px;
+    
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.menu-search img {
+    height: 16px;
+}
+.menu-search input {
+    width: 173px;
+    margin-left: 5px;
+    height: 20px;
+}
+
+.logo {
+    width: 300px;
+    height: 60px;
+    margin: 0 auto;
+}
+.logo-top {
+    font-family: Times New Roman;
+    color: #5e8400;
+    font-size: 28px;
+    font-weight: bold;
+}
+.logo-bottom {
+    margin-top: 10px;
+}
+
+/*
+ * 
+ */
+
+.content {
+    border: 1px solid #cdccca;
+    padding: 15px;
+    box-sizing: border-box;
+    background: #fff;
+}
+
+.article {
+    border-bottom: 1px solid #cdccca;
+    padding-bottom: 20px;
+    color: #4f5a5e;
+}
+
+.article a {
+    color: #5e8bac;
+    text-decoration: none;
+}
+.article a:hover {
+    text-decoration: underline;
+}
+
+.article-header {
+    border-bottom: 1px solid #cdccca;
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+    color: #434c55;
+}
+.article-header h2 {
+    margin: 0;
+    font-size: 1.5em;
+    font-weight: bold;
+    line-height: 27px;
+}
+
+.icon-wrapper {
+    height: 21px;
+    line-height: 21px;
+    display: inline-block;
+    overflow: hidden;
+}
+.icon {
+    height: 21px;
+    width: 21px;
+    float: left;
+    margin-right: 3px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.article-comm,
+.article-edit {
+    float: right;
+}
+
+.article-content {
+    padding: 5px 0;
+}
+
+/*
+ * 
+ */
+
+.sidebar {}
+
+.sidebar-item {
+    margin-bottom: 10px;
+    border: 1px solid #cdccca;
+    color: #575654;
+    background: #fff;
+}
+.sidebar-item a {
+    color: #5e8bac;
+    text-decoration: none;
+}
+.sidebar-item a:hover {
+    text-decoration: underline;
+}
+.sidebar-header {
+    background: #e8f2d7;
+    color: #4b4c00;
+    border-bottom: 1px solid #cdccca;
+    font-weight: bold;
+    padding: 5px;
+}
+
+.sidebar-list {
+    list-style-image: url(img/list-item.gif);
+    margin: 12px 0;
+    padding: 0;
+    padding-left: 25px;
+    padding-right: 10px;
+}
+
+.rss {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+    margin: 10px 20px;
+}
+.rss img {
+    height: 25px;
+    margin-right: 5px;
+}
+
+.sidebar-search {
+    width: 100%;
+    
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    
+    padding: 8px 10px;
+    box-sizing: border-box;
+}
+
+.sidebar-search input {
+    border: 1px solid #dddddd;
+    outline: none;
+    width: 50%;
+}
+
+.icon.calendar { background-image: url(img/calendar.gif); }
+.icon.comments { background-image: url(img/comments.gif); }
+.icon.edit { background-image: url(img/edit.gif); }
+.icon.user { background-image: url(img/user.gif); }
+.icon.rubric { background-image: url(img/rubric.gif); }
+.icon.arrow-up { background-image: url(img/arrow-up.gif); }
+
+/*
+ * 
+ */
+
+.footer {
+    width: 100%;
+    margin-top: 40px;
+    padding: 0 10px;
+    box-sizing: border-box;
+    color: #4f5a5e;
+}
+
+.go-up {
+    float: right;
+}
